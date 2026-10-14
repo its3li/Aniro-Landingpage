@@ -1,0 +1,4 @@
+.codex-run/
+node_modules/
+.vercel/
+*.log

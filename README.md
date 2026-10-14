@@ -2,9 +2,9 @@
 
 <img src="https://aniro.vercel.app/assets/icon.png" width="100" alt="Aniro Logo">
 
-# 🌙 Aniro Landing Page
+# Aniro website
 
-**Promotional Website for Aniro Islamic App**  
+**Official download and product website for Aniro**
 *موقع ترويجي لتطبيق أنيرو الإسلامي*
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -20,19 +20,22 @@
 
 ## 🎯 About
 
-A beautiful promotional landing page for **Aniro** — the Islamic companion app. Features modern design with aurora backgrounds and glassmorphism effects.
+A lightweight Arabic-first website for Aniro, with an English language
+control, genuine phone screenshots, the approved launch films, official
+APK downloads, and clear installation/update steps.
 
 صفحة ترويجية أنيقة لتطبيق **أنيرو** — رفيقك الإسلامي اليومي.
 
 ---
 
-## ✨ Features
+## Website features
 
-- 🎨 **Modern Design** — Aurora gradient backgrounds
-- 📱 **Responsive** — Works on all devices
-- 🌙 **Islamic Theme** — Elegant dark mode
-- ⚡ **Fast Loading** — Pure HTML/CSS/JS
-- 🔗 **App Store Links** — Direct download buttons
+- Navy and amber identity with local fonts, icons, and optimized WebP captures.
+- Arabic/English text and layout direction, saved in the browser.
+- Keyboard-accessible Quran, listening, Tafseer, and reciter view selector.
+- Launch films loaded only when requested, inside a native accessible dialog.
+- Live version feed with a local release fallback and a permanent GitHub link.
+- Mobile navigation, reduced-motion support, privacy and installation guidance.
 
 ---
 
@@ -49,11 +52,13 @@ A beautiful promotional landing page for **Aniro** — the Islamic companion app
 
 ```bash
 # Clone repository
-git clone https://github.com/its3li/AniroLandingpage.git
-cd AniroLandingpage
+git clone https://github.com/its3li/Aniro-Landingpage.git
+cd Aniro-Landingpage
 
 # Open in browser
-# Simply open index.html in any browser
+# Serve locally (Node.js required)
+node scripts/serve.cjs
+# Open http://127.0.0.1:3320
 ```
 
 ---
@@ -61,14 +66,33 @@ cd AniroLandingpage
 ## 📄 Project Structure
 
 ```
-AniroLandingpage/
-├── index.html          # Single page website
-└── README.md          # This file
+Aniro-Landingpage/
+├── index.html          # Product/download page
+├── styles.css          # Responsive visual system
+├── app.js              # Language, view selector, release feed, video
+├── privacy.html        # Actual service/permission information
+├── release.json        # Last verified official release fallback
+├── assets/             # Local screenshots, fonts, icons, videos
+└── vercel.json         # Static deployment headers
 ```
 
 ---
 
-## 👨‍💻 Developer
+## Deployment and asset sources
+
+The main branch is connected to the existing Vercel project at
+https://aniro.vercel.app. No framework migration or runtime CSS CDN is
+needed. Release metadata comes from the official its3li/Aniro repository.
+Only verified official GitHub APK URLs are accepted.
+
+Screenshots are genuine October 2026 phone captures; provenance is in
+assets/screens/SOURCES.md. Alexandria and Space Grotesk licenses accompany
+the locally hosted fonts. Phosphor icon assets include their license.
+No original phone pixels or app controls are recreated. Local QA checks
+ten language/viewport combinations, downloads/fallbacks, keyboard tabs,
+mobile menu, and video dialog behavior using scripts/qa.cjs.
+
+## Developer
 
 **Ali Mahmoud** — [Portfolio](https://its-ali.vercel.app)
 

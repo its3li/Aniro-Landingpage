@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aniro.vercel.app/sitemap.xml
