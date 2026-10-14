@@ -66,7 +66,7 @@ Vercel at https://aniro.vercel.app.
 | app.js | Language, gallery navigation, mobile menu, and release feed |
 | privacy.html | Existing service and permission information |
 | release.json | Last verified official release metadata |
-| assets/ | Current logo, screenshots, exact crops, fonts, and icons |
+| assets/ | Current logo, complete screenshots, fonts, and icons |
 | DESIGN.md | Design direction and pre-flight decisions |
 | scripts/qa.cjs | Viewport, gallery, language, media absence, and fallback checks |
 
