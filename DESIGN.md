@@ -20,8 +20,8 @@ The rejected site repeated a contained phone next to a feature list, hid
 important screens behind tabs, and used a large box and a decorative circle
 around the capture. Other sections repeated similar card-like groupings.
 
-The new hero pairs deliberate two-line typography with the Home capture and
-an exact detail crop. The Quran section is a gallery of four actual screens
+The hero pairs deliberate two-line typography with the complete Home capture.
+The Quran section is a gallery of four actual screens
 with captions outside the images; there are no tabs or giant background box.
 The daily section has one Azkar composition and two quieter utility views.
 The download section uses a broad layout, plain installation instructions,
@@ -42,9 +42,10 @@ testimonial, invented metric, decoration numbering, or video.
 
 ## Screens and motion
 
-Complete screen captures retain the 1080 × 2392 source aspect ratio. The
-prayer, Tasbeeh, and Qibla details are exact pixel crops documented in
-assets/screens/DETAIL-SOURCES.json. None of the UI content is reconstructed.
+Complete screen captures retain the 1080 × 2392 source aspect ratio. Home,
+Azkar, Tasbeeh, and Qibla are upright and fully contained. The detached
+detail crops and fixed-height Azkar clipping have been removed. None of
+the UI content is reconstructed.
 The user's real-asset requirement takes precedence over generating images.
 
 The gallery supports native horizontal scrolling, arrow controls, and Home,
@@ -62,6 +63,8 @@ and keeps all content visible. Transparency has a solid-fill fallback.
 - Headlines and copy fit; desktop hero CTA visible within the first viewport.
 - No rejected feature tabs, screenshot background box, videos, or media loads.
 - Four Quran screenshots, exact screenshot ratios, no broken local images.
+- Full Home/Azkar/Tasbeeh/Qibla screens: no clipping or copy overlap across
+  every tested viewport; no screenshot rotation or detached detail crops.
 - Download feed validates official GitHub APK URLs and has a working fallback.
 - Language switch persists; mobile menu and gallery are keyboard accessible.
 - Source filenames and every README image reference verified.

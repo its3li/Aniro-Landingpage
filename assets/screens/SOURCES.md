@@ -12,6 +12,7 @@ Qibla direction and Tasbeeh count are not invented or changed.
 Both website languages use the same Arabic captures so the reciter names
 are recognizable. English secondary labels remain as shown by the app.
 
-Prayer, Tasbeeh, and Qibla details are exact crops of the original PNGs.
-Pixel bounds, source dimensions, and source file hashes are documented in
-DETAIL-SOURCES.json. No controls, text, or decorative UI are recreated.
+The rejected prayer, Tasbeeh, and Qibla detail crops have been removed.
+Every current product screenshot shows the full captured screen. No
+controls, text, or decorative UI are recreated, and no text is cut off
+by a fixed-height screenshot container.

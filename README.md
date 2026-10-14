@@ -25,8 +25,9 @@ older screenshots from the previous interface.
 | <img src="./assets/screens/quran-reciters.webp" width="180" alt="Real reciter selection"> | <img src="./assets/screens/azkar-reading.webp" width="180" alt="Azkar reading and repetitions"> | <img src="./assets/screens/tasbeeh.webp" width="180" alt="Aniro Tasbeeh"> | <img src="./assets/screens/qibla.webp" width="180" alt="Real captured Qibla state"> |
 
 Capture provenance is in [SOURCES.md](assets/screens/SOURCES.md). Original
-screens are 1080 × 2392; full WebP images retain that aspect ratio. Exact
-detail crop bounds are in [DETAIL-SOURCES.json](assets/screens/DETAIL-SOURCES.json).
+screens are 1080 × 2392; full WebP images retain that aspect ratio.
+Home, Azkar, Tasbeeh, and Qibla show the complete captured screens upright,
+without detached crops or a container cutting through the content.
 The app UI, Quran text, counters, and compass state are not fabricated.
 
 The gallery shows each screen with its own caption. On smaller screens,
