@@ -21,7 +21,7 @@
 ## 🎯 About
 
 A lightweight Arabic-first website for Aniro, with an English language
-control, genuine phone screenshots, the approved launch films, official
+control, genuine phone screenshots, official
 APK downloads, and clear installation/update steps.
 
 صفحة ترويجية أنيقة لتطبيق **أنيرو** — رفيقك الإسلامي اليومي.
@@ -33,7 +33,6 @@ APK downloads, and clear installation/update steps.
 - Navy and amber identity with local fonts, icons, and optimized WebP captures.
 - Arabic/English text and layout direction, saved in the browser.
 - Keyboard-accessible Quran, listening, Tafseer, and reciter view selector.
-- Launch films loaded only when requested, inside a native accessible dialog.
 - Live version feed with a local release fallback and a permanent GitHub link.
 - Mobile navigation, reduced-motion support, privacy and installation guidance.
 
@@ -69,10 +68,10 @@ node scripts/serve.cjs
 Aniro-Landingpage/
 ├── index.html          # Product/download page
 ├── styles.css          # Responsive visual system
-├── app.js              # Language, view selector, release feed, video
+├── app.js              # Language, view selector, release feed
 ├── privacy.html        # Actual service/permission information
 ├── release.json        # Last verified official release fallback
-├── assets/             # Local screenshots, fonts, icons, videos
+├── assets/             # Local screenshots, fonts, icons
 └── vercel.json         # Static deployment headers
 ```
 
@@ -90,7 +89,7 @@ assets/screens/SOURCES.md. Alexandria and Space Grotesk licenses accompany
 the locally hosted fonts. Phosphor icon assets include their license.
 No original phone pixels or app controls are recreated. Local QA checks
 ten language/viewport combinations, downloads/fallbacks, keyboard tabs,
-mobile menu, and video dialog behavior using scripts/qa.cjs.
+mobile menu, and absence of embedded media using scripts/qa.cjs.
 
 ## Developer
 

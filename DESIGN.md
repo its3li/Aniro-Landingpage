@@ -12,7 +12,7 @@ their genuine 1080 × 2392 proportion.
 Layout: restrained split hero; interactive Quran tour; an asymmetric daily
 feature group; a clear three-step installation flow. The signature is the
 real Quran/listening/Tafseer/reciter selector. No fabricated product UI.
-The approved launch film opens on demand, with no autoplay on page load.
+No videos or video controls are included on the website.
 
 Design variance 6, motion intensity 3, visual density 3. Motion uses small
 transform/opacity reveals and supports reduced-motion. Touch targets are
@@ -21,7 +21,7 @@ transform/opacity reveals and supports reduced-motion. Touch targets are
 Previous site: broken remote images, old repository fallback, CDN runtime
 styling, outdated copyright, inaccessible clickable phone stack, untested
 modal focus, and an overbroad location privacy claim. Local assets, graceful
-download fallback, native dialog, and accurate service information replace
+download fallback and accurate service information replace
 these issues. Existing plain HTML/CSS/JS stack is preserved.
 
 Skills: redesign-existing-projects, design-taste-frontend, frontend-design,
