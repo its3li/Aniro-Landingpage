@@ -1,106 +1,85 @@
 <div align="center">
-
-<img src="https://aniro.vercel.app/assets/icon.png" width="100" alt="Aniro Logo">
-
-# Aniro website
-
-**Official download and product website for Aniro**
-*موقع ترويجي لتطبيق أنيرو الإسلامي*
-
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-00C853?style=for-the-badge&logo=vercel&logoColor=white)](https://aniro.vercel.app)
-
-[🌐 Live Demo](https://aniro.vercel.app)
-
+  <img src="./assets/logo.png" width="96" height="96" alt="Aniro logo">
+  <h1>Aniro website</h1>
+  <p>صلاتك، قرآنك، وذكرك. أقرب، كل يوم.</p>
+  <p><a href="https://aniro.vercel.app/">Live website</a> · <a href="https://github.com/its3li/Aniro/releases/latest">Official Android download</a> · <a href="https://github.com/its3li/Aniro">App repository</a></p>
 </div>
 
----
+The official Arabic-first website for Aniro. English is available through
+the language control. The site uses the current app logo and genuine phone
+captures, with no embedded videos.
 
-## 🎯 About
+## Current app screens
 
-A lightweight Arabic-first website for Aniro, with an English language
-control, genuine phone screenshots, official
-APK downloads, and clear installation/update steps.
+![Current Aniro website](./assets/site-preview.webp)
 
-صفحة ترويجية أنيقة لتطبيق **أنيرو** — رفيقك الإسلامي اليومي.
+These are the same current assets used by the website, rather than the
+older screenshots from the previous interface.
 
----
+| Home | Quran | Listening | Tafseer |
+| --- | --- | --- | --- |
+| <img src="./assets/screens/home.webp" width="180" alt="Aniro Home and prayer times"> | <img src="./assets/screens/quran-page-2.webp" width="180" alt="Quran with color-coded Tajweed"> | <img src="./assets/screens/quran-listening.webp" width="180" alt="Quran with active listening controls"> | <img src="./assets/screens/quran-tafseer.webp" width="180" alt="Actual Tafseer dialog"> |
 
-## Website features
+| Arabic reciter names | Daily Azkar | Tasbeeh | Qibla |
+| --- | --- | --- | --- |
+| <img src="./assets/screens/quran-reciters.webp" width="180" alt="Real reciter selection"> | <img src="./assets/screens/azkar-reading.webp" width="180" alt="Azkar reading and repetitions"> | <img src="./assets/screens/tasbeeh.webp" width="180" alt="Aniro Tasbeeh"> | <img src="./assets/screens/qibla.webp" width="180" alt="Real captured Qibla state"> |
 
-- Navy and amber identity with local fonts, icons, and optimized WebP captures.
-- Arabic/English text and layout direction, saved in the browser.
-- Keyboard-accessible Quran, listening, Tafseer, and reciter view selector.
-- Live version feed with a local release fallback and a permanent GitHub link.
-- Mobile navigation, reduced-motion support, privacy and installation guidance.
+Capture provenance is in [SOURCES.md](assets/screens/SOURCES.md). Original
+screens are 1080 × 2392; full WebP images retain that aspect ratio. Exact
+detail crop bounds are in [DETAIL-SOURCES.json](assets/screens/DETAIL-SOURCES.json).
+The app UI, Quran text, counters, and compass state are not fabricated.
 
----
+The gallery shows each screen with its own caption. On smaller screens,
+native scrolling and arrow controls let visitors browse the complete views.
 
-## 🛠️ Tech Stack
+## Website behavior
 
-- **HTML5** — Semantic markup
-- **CSS3** — Custom styling with animations
-- **JavaScript** — Interactive elements
-- **No Framework** — Lightweight & fast
+- Arabic/English content and layout direction, saved in the browser.
+- An open Quran screenshot gallery with native touch scrolling and keyboard
+  controls. No feature tabs or one-image substitution panel.
+- Official APK links, live release metadata, and a verified local fallback.
+- Clear installation and upgrade instructions for new and existing users.
+- Mobile navigation, visible focus, and reduced-motion support.
+- Local fonts, Phosphor icons, optimized images, and privacy information.
+- No embedded videos or external styling runtime.
 
----
+## Local development
 
-## 🚀 Getting Started
+This is a static HTML/CSS/JavaScript site. Node.js is only needed for the
+local preview helper; no frontend package installation or build step is
+required.
 
-```bash
-# Clone repository
-git clone https://github.com/its3li/Aniro-Landingpage.git
-cd Aniro-Landingpage
+    git clone https://github.com/its3li/Aniro-Landingpage.git
+    cd Aniro-Landingpage
+    node scripts/serve.cjs
 
-# Open in browser
-# Serve locally (Node.js required)
-node scripts/serve.cjs
-# Open http://127.0.0.1:3320
-```
+Open http://127.0.0.1:3320. The established main branch deploys through
+Vercel at https://aniro.vercel.app.
 
----
+## Files
 
-## 📄 Project Structure
+| File | Purpose |
+| --- | --- |
+| index.html | Product, screenshot gallery, and download content |
+| styles.css | Whole-page responsive brand layout |
+| app.js | Language, gallery navigation, mobile menu, and release feed |
+| privacy.html | Existing service and permission information |
+| release.json | Last verified official release metadata |
+| assets/ | Current logo, screenshots, exact crops, fonts, and icons |
+| DESIGN.md | Design direction and pre-flight decisions |
+| scripts/qa.cjs | Viewport, gallery, language, media absence, and fallback checks |
 
-```
-Aniro-Landingpage/
-├── index.html          # Product/download page
-├── styles.css          # Responsive visual system
-├── app.js              # Language, view selector, release feed
-├── privacy.html        # Actual service/permission information
-├── release.json        # Last verified official release fallback
-├── assets/             # Local screenshots, fonts, icons
-└── vercel.json         # Static deployment headers
-```
+## Validation and assets
 
----
+QA uses the adjacent Aniro workspace's Playwright dependency and configured
+Chromium executable. It checks both languages at five viewport widths,
+including gallery arrows and keyboard behavior, image proportions, download
+URLs, reduced motion, and fallback states. Reports and screenshots go to
+the ignored .codex-run directory.
 
-## Deployment and asset sources
+Alexandria and Space Grotesk licenses accompany their local font files.
+Phosphor icons include their license. The unchanged app logo is resized
+for web delivery. Assets in this README are committed locally so GitHub
+can render them without depending on the deployed site.
 
-The main branch is connected to the existing Vercel project at
-https://aniro.vercel.app. No framework migration or runtime CSS CDN is
-needed. Release metadata comes from the official its3li/Aniro repository.
-Only verified official GitHub APK URLs are accepted.
-
-Screenshots are genuine October 2026 phone captures; provenance is in
-assets/screens/SOURCES.md. Alexandria and Space Grotesk licenses accompany
-the locally hosted fonts. Phosphor icon assets include their license.
-No original phone pixels or app controls are recreated. Local QA checks
-ten language/viewport combinations, downloads/fallbacks, keyboard tabs,
-mobile menu, and absence of embedded media using scripts/qa.cjs.
-
-## Developer
-
-**Ali Mahmoud** — [Portfolio](https://its-ali.vercel.app)
-
----
-
-<div align="center">
-
-**Built with ❤️ for Aniro**
-
-*"أنيروا.. رفيقك لأداء العبادات"*
-
-</div>
+Built by [Ali Mahmoud](https://github.com/its3li).

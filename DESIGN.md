@@ -1,30 +1,75 @@
-# Aniro website direction
+# Aniro website design
 
-Arabic-first Android companion, with English available through a language
-control. Its job is to explain the current app and get users to the official
-APK, including a clear path for existing users to update.
+## Design read
 
-Preserve navy #0e131b, amber #ffb52e, warm white #f3f0e9, muted blue-gray
-#adb9cb, and surface #161d28. Locally hosted Alexandria and Space Grotesk.
-Buttons 12px, panels 18–24px, phone capture frames 31px; screenshots retain
-their genuine 1080 × 2392 proportion.
+A full visual overhaul of the Android companion website for Arabic-speaking
+users, with an open editorial composition, genuine product screens, and
+English available. The page's job is to explain Aniro and lead to the
+official APK. Existing anchors, navigation labels, downloads, legal copy,
+and the unchanged logo are preserved.
 
-Layout: restrained split hero; interactive Quran tour; an asymmetric daily
-feature group; a clear three-step installation flow. The signature is the
-real Quran/listening/Tafseer/reciter selector. No fabricated product UI.
-No videos or video controls are included on the website.
+DESIGN_VARIANCE: 7. MOTION_INTENSITY: 4. VISUAL_DENSITY: 3.
+Native HTML/CSS/JS is the established stack. This is a custom brand aesthetic,
+not an imitation of a named product design system. The explicitly requested
+design-taste-frontend skill guides typography, composition, content restraint,
+motion, accessibility, and the pre-flight check.
 
-Design variance 6, motion intensity 3, visual density 3. Motion uses small
-transform/opacity reveals and supports reduced-motion. Touch targets are
-44px or larger, keyboard navigation works, and focus is visible.
+## Audit and decisions
 
-Previous site: broken remote images, old repository fallback, CDN runtime
-styling, outdated copyright, inaccessible clickable phone stack, untested
-modal focus, and an overbroad location privacy claim. Local assets, graceful
-download fallback and accurate service information replace
-these issues. Existing plain HTML/CSS/JS stack is preserved.
+The rejected site repeated a contained phone next to a feature list, hid
+important screens behind tabs, and used a large box and a decorative circle
+around the capture. Other sections repeated similar card-like groupings.
 
-Skills: redesign-existing-projects, design-taste-frontend, frontend-design,
-ui-ux-pro-max. The last skill's search helper is absent; its accessibility
-and layout guidance is applied directly. Genuine product screenshots are
-used as requested rather than generated product assets.
+The new hero pairs deliberate two-line typography with the Home capture and
+an exact detail crop. The Quran section is a gallery of four actual screens
+with captions outside the images; there are no tabs or giant background box.
+The daily section has one Azkar composition and two quieter utility views.
+The download section uses a broad layout, plain installation instructions,
+and short help disclosures. A larger wordmark closes the page.
+
+## Tokens
+
+- Canvas: #0e131b. Surface: #141c27.
+- Text: #f3f0e9. Secondary text: #b0bbcb.
+- Accent: the existing Aniro amber #ffb52e.
+- Arabic: Alexandria. English: Space Grotesk. Both locally hosted.
+- Buttons: 10px corners. Feature surface: 20px. Screens: 20-25px.
+- Desktop max width: 1240px. Navigation: 76px desktop, 68px mobile.
+
+The brand requests a dark page, so that theme is locked across all sections.
+There is no theme inversion, serif insertion, generated product UI, fake
+testimonial, invented metric, decoration numbering, or video.
+
+## Screens and motion
+
+Complete screen captures retain the 1080 × 2392 source aspect ratio. The
+prayer, Tasbeeh, and Qibla details are exact pixel crops documented in
+assets/screens/DETAIL-SOURCES.json. None of the UI content is reconstructed.
+The user's real-asset requirement takes precedence over generating images.
+
+The gallery supports native horizontal scrolling, arrow controls, and Home,
+End, Left, and Right keys. RTL and LTR use the correct scroll direction.
+Controls disappear when all images fit, and disable at each end.
+
+Motion explains entrance hierarchy and acknowledges interaction: hero entry,
+small scroll reveals, and button/arrow feedback. No scroll hijacking,
+perpetual loops, or decorative status dots. Reduced motion removes movement
+and keeps all content visible. Transparency has a solid-fill fallback.
+
+## Pre-flight
+
+- Whole-page overhaul, not a section patch; original routes/anchors retained.
+- Headlines and copy fit; desktop hero CTA visible within the first viewport.
+- No rejected feature tabs, screenshot background box, videos, or media loads.
+- Four Quran screenshots, exact screenshot ratios, no broken local images.
+- Download feed validates official GitHub APK URLs and has a working fallback.
+- Language switch persists; mobile menu and gallery are keyboard accessible.
+- Source filenames and every README image reference verified.
+- Arabic and English tested at 320, 390, 768, 1024, and 1440px.
+- Hero entry/reveal and dynamic reduced-motion preference tested.
+- No em/en-dash separators in visible page copy.
+- Contrast, wrapping, touch target, and no-overflow checks recorded by QA.
+
+Visual screenshots are saved during QA. Image output could not be inspected
+directly in this tool session; geometric and interaction checks are recorded,
+and the user can assess the final aesthetic in the live page.

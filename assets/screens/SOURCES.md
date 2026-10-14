@@ -1,9 +1,17 @@
-# Current phone captures
+# Current screenshot assets
 
-Captured directly via Android ADB screencap from the user's Xiaomi phone on 2026-10-13. Original PNG dimensions are 1080 × 2392. No UI is recreated or stretched. Home was retaken with manual screen brightness at 255; automatic brightness was restored after capture.
+Captured from the app owner's phone on October 13, 2026. Original screens
+measure 1080 × 2392. Full WebP derivatives measure 540 × 1196 and
+810 × 1794, retaining the complete screenshot and its aspect ratio.
 
-Use the `ar/` set for launch visuals, including in an English narrated film when recognizable Arabic reciter names are desired. Arabic reciter names are the real app labels; English secondary labels remain as displayed by the app.
+Home uses the full-brightness capture. Quran page 2 is the verified opening
+page. Listening shows active playback; Tafseer and reciters are actual app
+dialogs. Azkar, Tasbeeh, Qibla, and Settings show genuine captured states.
+Qibla direction and Tasbeeh count are not invented or changed.
 
-Arabic assets: Home, Quran library, verified opening pages 1 and 2, reading settings, active listening player, Tafseer dialog, reciter selection, Azkar categories and reading, Tasbeeh, Qibla, and Settings. Qibla shows actual sensor state; no direction was fabricated.
+Both website languages use the same Arabic captures so the reciter names
+are recognizable. English secondary labels remain as shown by the app.
 
-The `en/` captures are supplementary and should be reviewed before use. The English reciter screenshot was replaced with a verified reciter dialog. Capture files are source assets only; the existing final MP4 files have not yet been updated.
+Prayer, Tasbeeh, and Qibla details are exact crops of the original PNGs.
+Pixel bounds, source dimensions, and source file hashes are documented in
+DETAIL-SOURCES.json. No controls, text, or decorative UI are recreated.

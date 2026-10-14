@@ -1,0 +1,47 @@
+[
+  {
+    "file": "prayer-detail.webp",
+    "source": "home.png",
+    "sourceBounds": [
+      160,
+      850,
+      920,
+      1370
+    ],
+    "dimensions": [
+      760,
+      520
+    ],
+    "sha256Source": "1b7ad55913ab636a8a8305b4366de4db2ca066f839879e44bfcf53d6f3a03b18"
+  },
+  {
+    "file": "tasbeeh-detail.webp",
+    "source": "tasbeeh.png",
+    "sourceBounds": [
+      220,
+      790,
+      860,
+      1490
+    ],
+    "dimensions": [
+      640,
+      700
+    ],
+    "sha256Source": "49610b0b35364fd47905c376982d3e9c3ef2f68bc864ef10ed870af56eeebd94"
+  },
+  {
+    "file": "qibla-detail.webp",
+    "source": "qibla.png",
+    "sourceBounds": [
+      220,
+      740,
+      860,
+      1440
+    ],
+    "dimensions": [
+      640,
+      700
+    ],
+    "sha256Source": "fa318bb7ddafda99debcd1a7c84c4330e590a3362b1668d746f5d48c51c820c3"
+  }
+]
