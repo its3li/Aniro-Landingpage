@@ -25,7 +25,7 @@ The Quran section is a gallery of four actual screens
 with captions outside the images; there are no tabs or giant background box.
 The daily section has one Azkar composition and two quieter utility views.
 The download section uses a broad layout, plain installation instructions,
-and short help disclosures. A larger wordmark closes the page.
+and short help disclosures. A compact brand label and useful links close the page.
 
 ## Tokens
 
